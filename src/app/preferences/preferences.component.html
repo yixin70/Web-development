@@ -1,0 +1,23 @@
+<body>
+
+  <form>
+    <fieldset>
+      <legend>Setting</legend>
+
+      <label for="">Number of UFOs</label>
+      <input type="text" name="UFO" [(ngModel)]="numberOfUFOs">
+
+      <br>
+
+      <label for="">Time (s)</label>
+      <input type="text" name="time" [(ngModel)]="time">
+
+      <br>
+
+
+      <button type="button" (click)="checkParameters()">Submit</button>
+      <button type="button" (click)="clearParameters()">ResetSettings</button>
+    </fieldset>
+  </form>
+
+</body>

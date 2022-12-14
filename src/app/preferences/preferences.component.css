@@ -1,0 +1,44 @@
+form {
+  text-align: center;
+  height: 100%;
+}
+
+
+fieldset {
+  margin-top: 20px;
+  border: 3px solid;
+  border-bottom-color: black;
+  border-right-color: black;
+  border-top-color: black;
+  border-left-color: black;
+  height: 100%;
+  text-align: center;
+
+}
+
+
+label {
+  display: inline-block;
+  width: 150px;
+  text-align: right;
+
+}
+
+input {
+  margin-top: 10px;
+  height: 30px;
+}
+
+button{
+  background-color: black;
+  color: white;
+  border: 0px;
+  padding: 10px;
+  margin: 10px;
+}
+
+legend{
+  font-size: 20px;
+  color: blue;
+
+}

@@ -1,0 +1,62 @@
+<body id="wrapper">
+
+    <div id="record">
+        <fieldset>
+            <legend>Record</legend>
+            <table id="table" class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Username</th>
+                        <th>Points</th>
+                        <th>UFOs</th>
+                        <th>Time (SEC)</th>
+                        <th>Date</th>
+                    </tr>
+
+                </thead>
+
+                <tbody *ngFor="let record of records, let i = index">
+                    <tr>
+                        <td>{{i}}</td>
+                        <td>{{record.username}}</td>
+                        <td>{{record.punctuation}}</td>
+                        <td>{{record.ufos}}</td>
+                        <td>{{record.disposedTime}}</td>
+                        <td>{{record.recordDate}}</td>
+                    </tr>
+                </tbody>
+
+
+            </table>
+        </fieldset>
+    </div>
+    <div id="personalRecord">
+        <fieldset>
+            <legend>Personal Record</legend>
+            <table id="table" class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Username</th>
+                        <th>Points</th>
+                        <th>UFOs</th>
+                        <th>Time (SEC)</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody *ngFor="let record of personalRecords, let i = index">
+                    <tr>
+                        <td>{{i}}</td>
+                        <td>{{record.username}}</td>
+                        <td>{{record.punctuation}}</td>
+                        <td>{{record.ufos}}</td>
+                        <td>{{record.disposedTime}}</td>
+                        <td>{{record.recordDate}}</td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+    </div>
+</body>

@@ -1,0 +1,6 @@
+<body>
+    <div>Final score: {{score}}</div>
+
+    <button *ngIf="isLogged()"(click)="saveScore()">Save score</button>
+    <button (click)="playAgain()">Play again</button>
+</body>

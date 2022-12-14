@@ -1,0 +1,20 @@
+
+
+
+
+<form>
+  <fieldset>
+      <legend>Login</legend>
+      <label for="">User Name</label>
+      <input type="text" placeholder="Username" [(ngModel)]="userName" name="username">
+
+      <br>
+
+      <label for="">Password</label>
+      <input type="password" placeholder="Password" [(ngModel)]="password" name="password">
+
+      <br>
+
+      <button type="submit" (click)="logIn()">Submit</button>
+  </fieldset>
+</form>
