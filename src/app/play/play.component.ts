@@ -45,7 +45,7 @@ export class PlayComponent implements OnInit, AfterViewInit {
         this.missileObject = new Missile('40', '20', '100', false);
         this.crearMissile(this.missileObject);
         this.launchUFOS();
-        this.timeInterval = setInterval(this.timeTick.bind(this), 100);
+        this.timeInterval = setInterval(this.timeTick.bind(this), 1000);
 
     }
     @HostListener('window:beforeunload')
